@@ -1,18 +1,51 @@
 <html>
-<head>
-  <title>Why can't I see?</title>
-</head>
-<body style="font-family: monospace">
-  
-  <h1> Welcome, Fresher! </h1>
-  <p> You are hereby invited to attend an evening of fun and drinks with fellow computer scientists this <b>Thursday 26th</b> </p>
-  <p> Attendance is not compulsory but <b> highly recommended </b>. Please arrive at <b>6pm</b>, Ground floor of ARCO </p>
-  <p> Pizza will be provided shortly after and a full open bar is available all evening (while stocks last) serving alcoholic and non alcoholic drinks free of charge. </p>
-  <p> We're prepared some amazing CompSci games (of both the drinking & non-drinking varieties) for you to play, there should be fun to be had for all </p>
-  <p> Later on we will join with the maths freshers who have been at a similar (albeit lower budget) evening in a head to head clash to determine once and for all, who is the king of the mathematical sciences? </p>  
-  <p> I appreciate this is short notice but it would be nice to see as many of you there as possible, I promise that this will be a night to remember </p>
-  <p> much love, </p>
-  <p> Jack & Matt (Your subject reps) </p>
-  
+  <head>
+    <title>Keble Ball</title>
+    <style>
+      body{
+        height: 100vh;
+        width: 100vw;
+        overflow:hidden;
+        background-color: black;
+        background-image:url("background.png");
+        background-size:contain;
+        background-position:center;
+        background-repeat-x: no-repeat;
+      }
+
+      #container{
+        margin: auto;
+      }
+      #logo{
+        display: block;
+        margin: auto;
+      }
+
+      .titletext{
+        padding: 10px 10px 10px 10px;
+        text-align:center;
+        font-family:"Rubik";
+        font-weight: bold;
+        font-size:27px;
+        color:white;
+      }
+      #toptext{
+        letter-spacing:8em;
+        margin-right:-8em;
+      }
+      #bottomtext{
+      }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700" rel="stylesheet">
+    <script src="js/countdown.min.js"></script>
+    <script src="js/jquery-3.1.0.min.js"></script>
+  </head>
+  <body>
+    <div id="container">
+    <div id="toptext" class="titletext"><h1>KB18</h1></div>
+    <div id="logoBox"><img id="logo" src="logo.png" width="50%"></img><img id=pupil src="pupil.png"></img></div>
+    <div id="bottomtext" class="titletext"><h1 id="countdown">05.05.18</h1></div>
+  </div>
+  <script src="script.js"></script>
   </body>
 </html>
